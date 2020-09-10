@@ -1,0 +1,10 @@
+https://medium.com/better-programming/python-memory-and-multiprocessing-ed517b8db8fd
+
+you have to sidestep the Global Interpreter Lock. In Python, instead of using threads, you can use multiprocessing.
+
+It is possible to share data between processes. You can read about this here.
+Getting started with multiprocessing is easy, here are a few resources:
+Python 201: A multiprocessing tutorial
+Python Multiprocess Tutorial: Run Code in Parallel Using the Multiprocessing Module — Corey Shafer’s youtube video that contains an example of image processing.
+Dead Simple Example of Using Multiprocessing Queue, Pool, and Locking — Stackoverflow thread.
+The one thing you have to remember with multiprocessing is that the entire memory is copied into a subprocess. That’s why memory profiling is important.

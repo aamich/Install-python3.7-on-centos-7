@@ -1,0 +1,19 @@
+from collections import deque
+
+# creating a deque
+improved_list = deque([1,2,3,4])
+print("deque:", improved_list)
+
+# inserting at O(1)
+improved_list.appendleft(0)
+print("after inserting 0:", improved_list)
+
+# poping at O(1)
+improved_list.popleft()
+print("popleft:", improved_list)
+
+# changing starting point , keeping the order
+improved_list.rotate(1)
+print("rotate 1:", improved_list)
+improved_list.rotate(3)
+print("rotate 3:", improved_list)
